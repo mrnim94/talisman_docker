@@ -12,3 +12,5 @@ RUN curl https://github.com/jaydeepc/talisman-html-report/archive/v1.4.zip -o ~/
 RUN cd ~/.talisman && unzip talisman_html_report.zip -d . && mv talisman-html-report-1.4 talisman_html_report && rm talisman_html_report.zip
 
 WORKDIR /mnt/data
+
+ENTRYPOINT ["/usr/local/bin/talisman"]
