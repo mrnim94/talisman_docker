@@ -13,4 +13,4 @@ RUN cd ~/.talisman && unzip talisman_html_report.zip -d . && mv talisman-html-re
 
 WORKDIR /mnt/data
 
-ENTRYPOINT ["/usr/local/bin/talisman"]
+ENTRYPOINT ["tail", "-f", "/dev/null"]
