@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk add git --no-cache
 
-RUN wget https://github.com/thoughtworks/talisman/releases/download/v1.30.2/talisman_linux_amd64
+RUN wget https://github.com/thoughtworks/talisman/releases/download/v1.31.0/talisman_linux_amd64
 RUN chmod +x talisman_linux_amd64
 RUN mv talisman_linux_amd64 /usr/local/bin/talisman
 
