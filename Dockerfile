@@ -12,3 +12,5 @@ RUN curl https://github.com/mrnim94/talisman-html-report/archive/refs/tags/v1.4.
 RUN cd ~/.talisman && unzip talisman_html_report.zip -d . && mv talisman-html-report-1.4.2 talisman_html_report && rm talisman_html_report.zip
 
 WORKDIR /mnt/data
+
+ENTRYPOINT ["talisman"]
